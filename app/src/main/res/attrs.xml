@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="YallowLoaderRecycleView">
+        <attr name="is_scroll_behavior" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SerraImageView">
+        <attr name="image_url" format="string" />
+
+
+    </declare-styleable>
+
+
+
+
+
+</resources>

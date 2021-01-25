@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_margin">10dp</dimen>
+    <dimen name="small_margin">5dp</dimen>
+    <dimen name="headerText">16sp</dimen>
+    <dimen name="zero_dimension">0dp</dimen>
+    <dimen name="movie_cover_height">200dp</dimen>
+    <dimen name="row_movie_width">120dp</dimen>
+    <dimen name="rating_image_size">25dp</dimen>
+</resources>

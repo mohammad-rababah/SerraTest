@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.MainFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_margin="@dimen/small_margin"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_dimension">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/popular"
+                android:layout_margin="@dimen/default_margin"
+                android:textSize="@dimen/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.yallow.serratest.ui.views.SerraLoaderRecycleView
+                android:id="@+id/mainFragmentPopularLoaderRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="@dimen/small_margin"
+            android:orientation="vertical"
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_dimension">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/topRated"
+                android:layout_margin="@dimen/default_margin"
+                android:textSize="@dimen/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.yallow.serratest.ui.views.SerraLoaderRecycleView android:id="@+id/mainFragmentTopRatedLoaderRecycleView"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="@dimen/small_margin"
+            android:orientation="vertical"
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_dimension">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/Revenue"
+                android:layout_margin="@dimen/default_margin"
+                android:textSize="@dimen/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.yallow.serratest.ui.views.SerraLoaderRecycleView
+                android:id="@+id/mainFragmentRevenueLoaderRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

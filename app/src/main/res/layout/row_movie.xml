@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="movie"
+            type="com.yallow.serratest.modules.movies.Movie" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_margin">
+
+        <com.yallow.serratest.ui.views.SerraImageView
+            android:layout_width="@dimen/row_movie_width"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:image_url="@{movie.poster_path}" />
+
+
+    </LinearLayout>
+</layout>

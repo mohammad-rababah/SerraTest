@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/loaderRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/loaderRecycleViewBottomProgress"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/loaderRecycleViewBottomProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:visibility="gone"
+       >
+
+        <ProgressBar
+            android:id="@+id/loaderRecycleViewBottomProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
